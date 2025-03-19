@@ -1,0 +1,580 @@
+/* Navbar Styling */
+.navbar-custom {
+ /* background-image: linear-gradient(to right, #FBD3E9 0%, #BB377D 51%, #FBD3E9 100%);*/
+ background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+  font-family: 'Lora', serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 15px 0;
+  transition: 0.5s; /* Smooth transition for hover effect */
+  background-size: 200% auto; /* Ensure gradient spans the full width */
+}
+
+.navbar-custom:hover {
+  background-position: right center; /* Change gradient direction on hover */
+}
+
+.navbar-custom .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; /* Contrast color for visibility */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(7, 7, 7, 0.3);
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: #ffffff; /* Match the brand text for consistency */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: white; /* Use white to contrast with gradient */
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #fbf8fa; /* Deep pink from the gradient for hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle transparent white hover background */
+  transform: scale(1.05);
+  text-decoration: none;
+  text-shadow: black;
+}
+
+/* Active Link Styling */
+.navbar-custom .navbar-nav .nav-link.active {
+  color: #BB377D; /* Match gradient color for active link */
+}
+
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-nav {
+    text-align: center;
+  }
+  .navbar-custom .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+  }
+}
+
+
+
+
+
+.hero-section {
+    background: url('./images/photo7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 150px 0;
+    color: rgb(253, 252, 252);
+    text-align: center;
+    position: relative;
+    margin-bottom: 650;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 13, 13, 0.5);
+    
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+  
+  
+  .btn-warning {background-image: linear-gradient(to right, #FBD3E9 0%, #BB377D  51%, #FBD3E9  100%)}
+  .btn-warning {
+     margin: 490px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+
+   .btn-warning:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+
+  .container{
+    color: white;
+  }
+  
+  .parallax {
+    width: 100%;
+    background: url('./images/parallax.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 480px;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    
+    
+  }
+
+  
+  
+  footer {
+    margin-top: 20px;
+    padding: 20px 10px;
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      padding: 15px 5px;
+      font-size: 13px;
+    }
+  }
+  
+  .ServicesPage {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Georgia', serif;
+    background-color: #f9f5f0; /* Light beige background */
+    color: #6a5b5b;
+  }
+  
+  .ServicesPage-header {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px solid #e6dfd9;
+  }
+  
+  .ServicesPage-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4a3e3e;
+  }
+  
+  .ServicesPage-header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ServicesPage-header nav li {
+    margin: 0 1rem;
+  }
+  
+  .ServicesPage-header nav a {
+    text-decoration: none;
+    color: #b4835b;
+    font-size: 1rem;
+  }
+  
+  .ServicesPage-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .ServicesPage-left {
+    width: 45%;
+    padding-right: 1rem;
+    border-right: 1px solid #e6dfd9;
+  }
+  
+  .ServicesPage-left h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4a3e3e;
+    margin-bottom: 1rem;
+  }
+  
+  .ServicesPage-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .ServicesPage-right {
+    width: 50%;
+    padding-left: 1rem;
+  }
+  
+  .ServicesPage-section h2 {
+    font-size: 1.5rem;
+    color: #4a3e3e;
+    margin-bottom: 1rem;
+  }
+  
+  .ServicesPage-section ul {
+    list-style: disc;
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+  
+  .ServicesPage-section li {
+    margin-bottom: 0.5rem;
+  }
+
+  .card{
+    padding: 5px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 340px;
+    height: 500px;
+    text-align: center;
+    border: solid;
+    box-shadow: 0 0 15px rgba(250, 250, 249, 0.9);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-color: black;
+    text-decoration: underline;
+    
+    
+   
+  }
+
+ 
+
+
+  .card:hover {
+    box-shadow: 0 0 25px rgba(13, 13, 13, 0.9);
+    transition: box-shadow 0.3s ease;
+    transform: scale(1.02);
+  }
+
+   .card-container{
+    
+    /* background: url('./images/parallax.jpg') no-repeat center center fixed; */
+    background-position: center;
+    background-size: cover;
+  } 
+
+  .card-img-top{
+    border: solid 1px ;
+    box-shadow:0 0 15px rgba(75, 35, 5, 0.8) ;
+    height: 300px;
+  }
+
+
+  
+  
+  /* Overall Body Content */
+  body {
+   /* background-image: linear-gradient(to right, #FBD3E9 0%, #BB377D 51%, #FBD3E9 100%);*/
+   
+   background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%); 
+   background-size: 200% auto; /* For smooth hover effects if needed */
+    background-attachment: fixed; /* Keep the gradient fixed while scrolling */
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white; /* Ensure text is readable */
+    transition: background-position 0.5s ease; /* Smooth transitions */
+  }
+  
+  body:hover {
+    background-position: right center; /* Gradient shift on hover */
+  }
+  
+  .body-contents {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+  
+
+/* Hero Section Styling */
+.hero-sectionS {
+  width: 100%;
+  background-size: cover;
+  padding: 150px ;
+  color: white;
+  text-align: center;
+  position: relative;
+  border: solid;
+  border-color: black;
+  margin-bottom: 70px;
+}
+
+.hero-sectionS::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  
+ 
+}
+
+.hero-textS {
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* Button Styling */
+.btn-warningS {
+  background-color: #ffd700;
+  border: none;
+  color: #6b3e26;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-warningS:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Signup Container Styling */
+.signup-containerS {
+  
+  background: rgba(24, 24, 20, 0.5);
+  border: solid;
+  border-color: black;
+  box-shadow: 0 0 15px rgba(19, 100, 230, 0.8);
+  padding: 30px;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  color: #fce1b5;
+  
+  
+  
+  
+}
+.signup-containerS h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+#dropdown-user-type{
+  margin: auto;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.dropdown-button {
+  width: 100%;
+  
+}
+
+/* Signup Button Styling */
+.signup-buttonS {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+form{
+  padding: 20px;
+  margin: 10px;
+}
+#Name{
+  margin: 8px;
+  margin-top: 2px;
+  
+  
+}
+
+
+
+
+@media (max-width: 768px) {
+ 
+
+  .signup-containerS {
+    width: 90%;
+    padding: 55px;
+  }
+
+  .hero-sectionS {
+    padding: 150px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*aboutus*/
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.hover-card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.hover-card {
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(6, 6, 6, 0.9);
+}
+
+
+
+
+
+
+/*vendors */
+
+.vendors-header {
+  background: url('./images/vendors-banner.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 3rem 0;
+  color: white;
+}
+
+/* Vendor card styling */
+.vendor-card {
+  
+  box-shadow: 0 0 15px rgba(240, 118, 118, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin:auto;
+  margin-bottom: 25px;
+  border: 2px solid #0d0d0d;
+  border-radius: 8px;
+  background:rgba(214, 172, 172, 0.8);
+  width: 70%;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.vendor-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(6, 6, 6, 0.9);
+  
+  
+  
+}
+
+.vendor-img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border: solid 1px;
+  margin-right: 20px; /* Space between the image and text */
+}
+
+.vendor-card h3 {
+  margin: 0px;
+  font-size: 1.5em;
+}
+
+.vendor-card p {
+  margin: 8px 0;
+}
+
+.vendor-bundle {
+  font-weight: bold;
+}
+
+.vendor-card button {
+  margin-top: 15px;
+}
+
+/* Optionally, add responsiveness for mobile */
+@media (max-width: 768px) {
+  .vendor-card {
+    
+    box-shadow: 0 0 15px rgba(248, 247, 247, 0.8);
+    flex-direction: column; /* Stack image and text vertically on smaller screens */
+  align-items: flex-start;
+  width: 100%; /* Full width on smaller screens */
+  max-width: none;
+  }
+
+  .vendor-img {
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+.admin-dashboard {
+  padding: 5px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 340px;
+  height: 500px;
+  text-align: center;
+  border: solid;
+  box-shadow: 0 0 15px rgba(250, 250, 249, 0.9);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-color: black;
+  text-decoration: underline;
+}
+
+.admin-dashboard:hover {
+  box-shadow: 0 0 25px rgba(13, 13, 13, 0.9);
+  transition: box-shadow 0.3s ease;
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
